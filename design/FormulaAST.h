@@ -32,3 +32,8 @@ private:
 
 FormulaAST ParseFormulaAST(std::istream& in);
 FormulaAST ParseFormulaAST(const std::string& in_str);
+
+новые методы и поля 
+
+хранилище распарсенных ячеек
+FormulaAST::std::forward_list<Position> cells_

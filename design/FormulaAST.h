@@ -26,14 +26,15 @@ public:
     void Print(std::ostream& out) const;
     void PrintFormula(std::ostream& out) const;
 
+
 private:
+//Новое
+хранилище парсенных ячеейк из формулы
+std::forward_list<Position> cells_
+
     std::unique_ptr<ASTImpl::Expr> root_expr_;
 };
 
 FormulaAST ParseFormulaAST(std::istream& in);
 FormulaAST ParseFormulaAST(const std::string& in_str);
 
-новые методы и поля 
-
-хранилище распарсенных ячеек
-FormulaAST::std::forward_list<Position> cells_

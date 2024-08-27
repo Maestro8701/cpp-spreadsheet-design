@@ -24,7 +24,15 @@ public:
     const Cell* GetConcreteCell(Position pos) const;
     Cell* GetConcreteCell(Position pos);
 
+//новые методы и поля 
+
+void AddCell(const string& table_index, const string& value_cell)
+
 private:
+    bool CheckingTheCyclicDependence(const string& table_index)
+
+//новые методы и поля конец
+
     void MaybeIncreaseSizeToIncludePosition(Position pos);
     void PrintCells(std::ostream& output,
                     const std::function<void(const CellInterface&)>& printCell) const;
@@ -32,3 +40,5 @@ private:
 
     std::vector<std::vector<std::unique_ptr<Cell>>> cells_;
 };
+
+

@@ -25,7 +25,6 @@ public:
     Cell* GetConcreteCell(Position pos);
 
 //новые методы и поля 
-
 void AddCell(const string& table_index, const string& value_cell)
 
 private:

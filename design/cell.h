@@ -15,6 +15,9 @@ public:
     std::string GetText() const override;
 
 private:
+//Новое
+    unordered_set<Cell*> cycle_check;
+
     class Impl;
     class EmptyImpl;
     class TextImpl;

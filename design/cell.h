@@ -16,6 +16,7 @@ public:
 
 private:
 //Новое
+хранилище ячеек на которые ссылается ячейка для проверки цикла
     unordered_set<Cell*> cycle_check;
 
     class Impl;
